@@ -13,7 +13,7 @@ const copyButton = citySection.querySelector('.btn')
 const toast = new bootstrap.Toast(document.querySelector('.toast'))
 
 const api_key = '02aa797d46ba94205ffe0cae65811a3b'
-const getUrl = city => `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric`
+const getUrl = city => `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}&units=metric`
 const dateFormat = new Intl.DateTimeFormat('ru-RU', {hour: "2-digit", minute: "2-digit"})
 
 copyButton.addEventListener('click', () => {
